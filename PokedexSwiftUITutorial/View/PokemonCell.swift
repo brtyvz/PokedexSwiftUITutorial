@@ -6,20 +6,29 @@
 //
 
 import SwiftUI
-
+import Kingfisher
 struct PokemonCell: View {
+    let pokemon : Pokemon
+    let viewModel : PokemonViewModel
+    let backgroundColor : Color
+    init(pokemon:Pokemon,viewModel:PokemonViewModel){
+        self.pokemon = pokemon
+        self.viewModel = viewModel
+        self.backgroundColor = Color(viewModel.backgroundColor(forType: pokemon.type))
+        
+    }
     var body: some View {
         ZStack{
             
             VStack(alignment:.leading){
-                Text("Bulbauseur")
+                Text(pokemon.name)
                     .padding(.leading)
                     .foregroundColor(.white)
                     .font(.headline)
                     .padding(.top,4)
                 HStack{
                     
-                    Text("Poison")
+                    Text(pokemon.type)
                         .font(.subheadline).bold()
                         .padding(.horizontal,16)
                         .padding(.vertical,8)
@@ -31,7 +40,7 @@ struct PokemonCell: View {
                         .frame(width: 100, height:24)
                     
                     
-                    Image("1").resizable()
+                    KFImage(URL(string: pokemon.imageUrl)).resizable()
                         .scaledToFit()
                         .frame(width: 68, height: 68).foregroundColor(.white)
                         .padding([.bottom,.trailing],4)
@@ -46,15 +55,15 @@ struct PokemonCell: View {
             
         
             
-        }.background(Color.green)
+        }.background(backgroundColor)
             
             .cornerRadius(12)
-            .shadow(color: .green, radius: 6, x: 0, y: 0)
+            .shadow(color: backgroundColor, radius: 6, x: 0, y: 0)
     }
 }
 
-struct PokemonCell_Previews: PreviewProvider {
-    static var previews: some View {
-        PokemonCell()
-    }
-}
+//struct PokemonCell_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PokemonCell(pokemon: MOCK_POKEMON[0])
+//    }
+//}
