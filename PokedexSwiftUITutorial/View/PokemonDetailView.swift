@@ -21,11 +21,24 @@ struct PokemonDetailView: View {
     }
     var body: some View {
         VStack(alignment: .center){
-            KFImage(URL(string: pokemon.imageUrl)).resizable().padding(.top)
-                .scaledToFit()
-                .frame(width: 200, height: 208).foregroundColor(.white)
-              
-            
+            Section{
+                ZStack{
+                    
+                    KFImage(URL(string: pokemon.imageUrl)).resizable().padding(.top,5).frame(width: 180, height: 180).offset( y: -70)
+                        .scaledToFit()
+                        .frame(width: 440, height: 178).foregroundColor(.white)
+//                        .overlay(
+//                        RoundedRectangle(cornerRadius: 20)
+//                            .fill(Color( viewModel.backgroundColor(forType: pokemon.type)).opacity(0.90))
+//                        )
+
+                    
+                    
+                }.background(Color(viewModel.backgroundColor(forType: pokemon.type)).opacity(0.50))
+             
+                
+            }
+        
             Text(pokemon.name.capitalized).padding().font(.title)
             ZStack{            Text(pokemon.type)
                     .font(.subheadline).bold()
@@ -46,7 +59,7 @@ struct PokemonDetailView: View {
             
 //             Text("Stats").padding(.bottom).font(.title)
             
-            Section(header:Text("Stats").font(.title).foregroundColor(Color(viewModel.backgroundColor(forType: pokemon.type)).opacity(0.50))) {
+            Section(header:Text("Stats").font(.title).foregroundColor(Color(viewModel.backgroundColor(forType: pokemon.type)).opacity(0.90))) {
                 Text("Attack:\(pokemon.attack)")
                 Text("Defense:\(pokemon.defense)")
                 Text("Weight:\(pokemon.weight)")
