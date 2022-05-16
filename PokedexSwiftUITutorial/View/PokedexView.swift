@@ -15,8 +15,15 @@ struct PokedexView: View {
             ScrollView{
                
                 LazyVGrid(columns:gridItem ,spacing: 22 ){
+
                     ForEach(viewModel.pokemon){ pokemon in
-                        PokemonCell(pokemon: pokemon, viewModel: viewModel)
+                        NavigationLink {
+                            PokemonDetailView(pokemon: pokemon, viewModel: viewModel)
+                        } label: {
+                            PokemonCell(pokemon: pokemon, viewModel: viewModel)
+                        }
+
+                       
                         
                     }
                     

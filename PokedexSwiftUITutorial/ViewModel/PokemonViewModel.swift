@@ -40,11 +40,11 @@ class PokemonViewModel:ObservableObject{
         case "water" : return .systemBlue
         case "electric" : return .systemYellow
         case "psychic" : return .systemPurple
-        case "normal" : return .systemRed
-        case "ground" : return .systemRed
-        case "flaying" : return .systemRed
-        case "fairy" : return .systemRed
-            
+        case "normal" : return .systemPink
+        case "ground" : return .systemGray
+        case "flying" : return .systemCyan
+        case "fairy" : return .orange
+        case "fighting" : return .systemBrown
         default : return .systemIndigo
             
         }

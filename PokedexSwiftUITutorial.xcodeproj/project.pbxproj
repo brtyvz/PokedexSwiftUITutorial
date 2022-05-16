@@ -12,10 +12,13 @@
 		5B51556E282EBB1100316A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B51556D282EBB1100316A61 /* Assets.xcassets */; };
 		5B515571282EBB1100316A61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B515570282EBB1100316A61 /* Preview Assets.xcassets */; };
 		5B51557B282EEE8600316A61 /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B51557A282EEE8600316A61 /* PokemonCell.swift */; };
+		5B58580828324A5200A3FF4E /* PokemonColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B58580728324A5200A3FF4E /* PokemonColor.xcassets */; };
+		5B58580E2832789200A3FF4E /* StockCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 5B58580D2832789200A3FF4E /* StockCharts */; };
 		5B58E10E282FC3B700DB7F92 /* PokedexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E10D282FC3B700DB7F92 /* PokedexView.swift */; };
 		5B58E110282FDB2C00DB7F92 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E10F282FDB2C00DB7F92 /* Pokemon.swift */; };
 		5B58E11228301FCD00DB7F92 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58E11128301FCD00DB7F92 /* PokemonViewModel.swift */; };
 		5B58E11528304F3F00DB7F92 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5B58E11428304F3F00DB7F92 /* Kingfisher */; };
+		5B5B8FD3283117670051B6DC /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B8FD2283117670051B6DC /* PokemonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +28,11 @@
 		5B51556D282EBB1100316A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B515570282EBB1100316A61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B51557A282EEE8600316A61 /* PokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
+		5B58580728324A5200A3FF4E /* PokemonColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PokemonColor.xcassets; sourceTree = "<group>"; };
 		5B58E10D282FC3B700DB7F92 /* PokedexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexView.swift; sourceTree = "<group>"; };
 		5B58E10F282FDB2C00DB7F92 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		5B58E11128301FCD00DB7F92 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		5B5B8FD2283117670051B6DC /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B58E11528304F3F00DB7F92 /* Kingfisher in Frameworks */,
+				5B58580E2832789200A3FF4E /* StockCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +73,7 @@
 				5B515569282EBB1000316A61 /* PokedexSwiftUITutorialApp.swift */,
 				5B51556B282EBB1000316A61 /* ContentView.swift */,
 				5B51556D282EBB1100316A61 /* Assets.xcassets */,
+				5B58580728324A5200A3FF4E /* PokemonColor.xcassets */,
 				5B51556F282EBB1100316A61 /* Preview Content */,
 			);
 			path = PokedexSwiftUITutorial;
@@ -93,6 +100,7 @@
 			children = (
 				5B51557A282EEE8600316A61 /* PokemonCell.swift */,
 				5B58E10D282FC3B700DB7F92 /* PokedexView.swift */,
+				5B5B8FD2283117670051B6DC /* PokemonDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 			name = PokedexSwiftUITutorial;
 			packageProductDependencies = (
 				5B58E11428304F3F00DB7F92 /* Kingfisher */,
+				5B58580D2832789200A3FF4E /* StockCharts */,
 			);
 			productName = PokedexSwiftUITutorial;
 			productReference = 5B515566282EBB1000316A61 /* PokedexSwiftUITutorial.app */;
@@ -154,6 +163,7 @@
 			mainGroup = 5B51555D282EBB1000316A61;
 			packageReferences = (
 				5B58E11328304F3F00DB7F92 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				5B58580C2832789200A3FF4E /* XCRemoteSwiftPackageReference "stock-charts" */,
 			);
 			productRefGroup = 5B515567282EBB1000316A61 /* Products */;
 			projectDirPath = "";
@@ -170,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B515571282EBB1100316A61 /* Preview Assets.xcassets in Resources */,
+				5B58580828324A5200A3FF4E /* PokemonColor.xcassets in Resources */,
 				5B51556E282EBB1100316A61 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +197,7 @@
 				5B58E11228301FCD00DB7F92 /* PokemonViewModel.swift in Sources */,
 				5B51556A282EBB1000316A61 /* PokedexSwiftUITutorialApp.swift in Sources */,
 				5B51557B282EEE8600316A61 /* PokemonCell.swift in Sources */,
+				5B5B8FD3283117670051B6DC /* PokemonDetailView.swift in Sources */,
 				5B58E10E282FC3B700DB7F92 /* PokedexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +401,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5B58580C2832789200A3FF4E /* XCRemoteSwiftPackageReference "stock-charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/denniscm190/stock-charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		5B58E11328304F3F00DB7F92 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -400,6 +420,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5B58580D2832789200A3FF4E /* StockCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B58580C2832789200A3FF4E /* XCRemoteSwiftPackageReference "stock-charts" */;
+			productName = StockCharts;
+		};
 		5B58E11428304F3F00DB7F92 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5B58E11328304F3F00DB7F92 /* XCRemoteSwiftPackageReference "Kingfisher" */;

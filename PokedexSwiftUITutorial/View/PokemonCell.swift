@@ -11,6 +11,7 @@ struct PokemonCell: View {
     let pokemon : Pokemon
     let viewModel : PokemonViewModel
     let backgroundColor : Color
+    
     init(pokemon:Pokemon,viewModel:PokemonViewModel){
         self.pokemon = pokemon
         self.viewModel = viewModel
@@ -21,7 +22,7 @@ struct PokemonCell: View {
         ZStack{
             
             VStack(alignment:.leading){
-                Text(pokemon.name)
+                Text(pokemon.name.capitalized)
                     .padding(.leading)
                     .foregroundColor(.white)
                     .font(.headline)
