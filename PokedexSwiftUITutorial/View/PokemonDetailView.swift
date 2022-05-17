@@ -60,11 +60,11 @@ struct PokemonDetailView: View {
 //             Text("Stats").padding(.bottom).font(.title)
             
             Section(header:Text("Stats").font(.title).foregroundColor(Color(viewModel.backgroundColor(forType: pokemon.type)).opacity(0.90))) {
-                Text("Attack:\(pokemon.attack)")
-                Text("Defense:\(pokemon.defense)")
-                Text("Weight:\(pokemon.weight)")
-                Text("Height:\(pokemon.height)")
-            }.padding(.bottom)
+                Text("Attack: \(pokemon.attack)")
+                Text("Defense: \(pokemon.defense)")
+                Text("Weight: \(pokemon.weight)")
+                Text("Height: \(pokemon.height)")
+            }.padding(.bottom).foregroundColor(.black)
             
           
             }
